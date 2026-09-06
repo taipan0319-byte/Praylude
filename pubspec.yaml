@@ -1,0 +1,30 @@
+name: praylude
+description: "Praylude — a Catholic devotional app for those seeking the vocation of marriage."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # State management (same pattern as Grove)
+  provider: ^6.1.2
+  # Milestone-1 local persistence. The letters journal milestone replaces this
+  # with a real database (Drift/SQLite); everything goes through
+  # StorageService so that swap touches one file.
+  shared_preferences: ^2.2.3
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/content/daily_prepare.json
+    - assets/content/daily_seek.json
+    - assets/content/novena_raphael.json

@@ -1,0 +1,18 @@
+{
+  "novena": "st-raphael",
+  "saint": "St. Raphael the Archangel",
+  "title": "Novena to St. Raphael",
+  "subtitle": "Patron of happy meetings and Christian marriage",
+  "about": "PLACEHOLDER — short saint profile by Ryan & wife. Raphael, whose name means 'God heals,' guided young Tobias on his journey and brought him to Sarah, his future wife (Book of Tobit). He is the traditional intercessor for those seeking a holy spouse.",
+  "days": [
+    { "day": 1, "type": "devotional", "title": "Setting Out", "scripture_ref": "Tobit 5:27 (Douay-Rheims)", "scripture_text": "Then Tobias said: I wish thee a good journey. And they went their way, and the angel of the Lord kept them company.", "prayer": "PLACEHOLDER novena day 1 prayer — St. Raphael, walk this road with me as you walked with Tobias. Amen.", "reflection": "PLACEHOLDER day 1 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 2, "type": "devotional", "title": "The Companion You Didn't Recognize", "scripture_ref": "Tobit 5:5-6", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 2 prayer.", "reflection": "PLACEHOLDER day 2 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 3, "type": "reflection", "title": "God Heals First", "scripture_ref": "Tobit 11:7-8", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 3 prayer.", "reflection": "PLACEHOLDER day 3 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 4, "type": "devotional", "title": "Sarah's Long Wait", "scripture_ref": "Tobit 3:11-12", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 4 prayer.", "reflection": "PLACEHOLDER day 4 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 5, "type": "formation", "title": "Courage at the Threshold", "scripture_ref": "Tobit 6:14-18", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 5 prayer.", "reflection": "PLACEHOLDER day 5 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 6, "type": "devotional", "title": "A Marriage Begun in Prayer", "scripture_ref": "Tobit 8:4", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 6 prayer.", "reflection": "PLACEHOLDER day 6 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 7, "type": "reflection", "title": "The Parents' Blessing", "scripture_ref": "Tobit 10:13", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 7 prayer.", "reflection": "PLACEHOLDER day 7 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 8, "type": "devotional", "title": "The Journey Home", "scripture_ref": "Tobit 11:1-4", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 8 prayer.", "reflection": "PLACEHOLDER day 8 reflection.", "closing": "St. Raphael, pray for us." },
+    { "day": 9, "type": "devotional", "title": "The Angel Revealed", "scripture_ref": "Tobit 12:6-7", "scripture_text": "PLACEHOLDER scripture text.", "prayer": "PLACEHOLDER novena day 9 prayer.", "reflection": "PLACEHOLDER day 9 reflection.", "closing": "St. Raphael, pray for us." }
+  ]
+}
