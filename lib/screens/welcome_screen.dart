@@ -20,12 +20,19 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(28),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Spacer(),
+        // Scroll-safe: fills tall screens with spacers, scrolls on short ones
+        // instead of overflowing.
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(
+                child: Padding(
+                  padding: const EdgeInsets.all(28),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const Spacer(),
               const Text('🕯️', textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 56)),
               const SizedBox(height: 16),
@@ -60,7 +67,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     context.read<AppState>().completeOnboarding(_pref),
                 child: const Text('Begin'),
               ),
-            ],
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
       ),
