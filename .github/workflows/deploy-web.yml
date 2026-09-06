@@ -30,6 +30,10 @@ jobs:
       - run: flutter test
       # Case must match the repo name exactly — GitHub Pages paths are case-sensitive
       - run: flutter build web --release --base-href /Praylude/
+      # Marketing landing page rides along at /Praylude/welcome/ (see landing/CLAUDE-HANDOFF.md)
+      - run: |
+          mkdir -p build/web/welcome
+          cp -r landing/index.html landing/assets build/web/welcome/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/web
