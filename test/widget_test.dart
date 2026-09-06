@@ -19,6 +19,6 @@ void main() {
     await tester.pumpWidget(PrayludeApp(state: state));
 
     expect(find.text('Praylude'), findsOneWidget);
-    expect(find.text('Begin'), findsOneWidget);
+    expect(find.text('Begin praying'), findsOneWidget);
   });
 }

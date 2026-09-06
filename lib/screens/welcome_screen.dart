@@ -42,19 +42,54 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       .textTheme
                       .headlineLarge
                       ?.copyWith(fontWeight: FontWeight.w700)),
-              const SizedBox(height: 8),
+              const SizedBox(height: 12),
               Text(
                 "You haven't met them yet.\nYou can still pray for them.",
                 textAlign: TextAlign.center,
                 style: Theme.of(context)
                     .textTheme
-                    .titleMedium
-                    ?.copyWith(color: AppTheme.inkSoft),
+                    .titleLarge
+                    ?.copyWith(fontWeight: FontWeight.w600, height: 1.3),
               ),
-              const SizedBox(height: 40),
-              Text('How would you like to begin?',
-                  style: Theme.of(context).textTheme.titleSmall),
-              const SizedBox(height: 12),
+              const SizedBox(height: 32),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Column(
+                  children: [
+                    Text(
+                      '“Ask and it will be given to you.”',
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context)
+                          .textTheme
+                          .headlineSmall
+                          ?.copyWith(
+                              fontStyle: FontStyle.italic,
+                              color: AppTheme.ember,
+                              height: 1.4),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      'Matthew 7:7',
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge
+                          ?.copyWith(
+                              color: AppTheme.inkSoft, letterSpacing: 1.1),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 32),
+              Text(
+                'Bring your hope for marriage to God. Pray for your future spouse, ask for the grace to meet, and prepare to build a faithful life together.',
+                textAlign: TextAlign.center,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyLarge
+                    ?.copyWith(color: AppTheme.inkSoft, height: 1.6),
+              ),
+              const SizedBox(height: 28),
               _choice('both', 'A bit of everything',
                   'Daily prayers from both paths — you can narrow later.'),
               _choice('prepare', 'Prepare',
@@ -65,7 +100,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               FilledButton(
                 onPressed: () =>
                     context.read<AppState>().completeOnboarding(_pref),
-                child: const Text('Begin'),
+                child: const Text('Begin praying'),
               ),
                     ],
                   ),
