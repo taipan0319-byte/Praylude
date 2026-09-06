@@ -28,7 +28,8 @@ jobs:
       - run: flutter create . --project-name praylude --org com.praylude --platforms web
       - run: flutter pub get
       - run: flutter test
-      - run: flutter build web --release --base-href /praylude/
+      # Case must match the repo name exactly — GitHub Pages paths are case-sensitive
+      - run: flutter build web --release --base-href /Praylude/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/web
